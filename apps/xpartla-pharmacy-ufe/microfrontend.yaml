@@ -1,0 +1,9 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: MicroFrontend
+metadata:
+  name: xpartla-pharmacy-ufe
+spec:
+  frontendClass: md-shell
+  service:
+    name: xpartla-pharmacy-ufe
+  modulePath: build/pharmacy-ufe.esm.js

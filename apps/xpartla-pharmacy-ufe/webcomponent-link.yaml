@@ -1,0 +1,25 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: xpartla-pharmacy-ufe-link
+spec:
+  microFrontend: polyfea-md-shell
+  element: polyfea-md-app
+  attributes:
+    - name: headline
+      value: Sklad lekárne xpartla
+    - name: short-headline
+      value: Sklad lekárne
+    - name: supporting-text
+      value: |
+        Spravuje zoznam produktov v lekárni
+    - name: material-icon
+      value: local_pharmacy
+    - name: href
+      value: ./xpartla-pharmacy-product
+  priority: 10
+  displayRules:
+    - anyOf:
+        - context-name: applications
+        - context-name: rail-content
+        - context-name: drawer-content

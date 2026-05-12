@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: wac-hospital
+
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: wac-hospital
+
+resources:
+  - ../../../apps/xpartla-pharmacy-ufe
+  - ../../../apps/xpartla-pharmacy-webapi
+  - ../../../apps/mongo-express
+
+patches:
+  - path: patches/pharmacy-webapi.service.yaml
+
+components:
+  - ../../../components/version-developers
+  - https://github.com/xpartla/pharmacy-webapi//deployments/kustomize/components/mongodb

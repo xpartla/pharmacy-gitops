@@ -1,0 +1,18 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: xpartla-pharmacy-ufe-content
+spec:
+  microFrontend: xpartla-pharmacy-ufe
+  element: xpartla-pharmacy-product-app
+  attributes:
+    - name: base-path
+      value: ./xpartla-pharmacy-product/
+    - name: api-base
+      value: /xpartla-api
+    - name: pharmacy-id
+      value: lekaren-centrum
+  displayRules:
+    - allOf:
+        - context-name: main-content
+        - path: "^(\\.?/)?xpartla-pharmacy-product(/.*)?$"

@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xpartla-pharmacy-webapi
+spec:
+  template:
+    spec:
+      containers:
+        - name: openapi-ui
+          env:
+            - name: URL
+              value: /xpartla-openapi
+            - name: BASE_URL
+              value: /xpartla-openapi-ui
