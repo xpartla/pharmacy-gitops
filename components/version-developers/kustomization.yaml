@@ -3,7 +3,7 @@ kind: Component
 images:
   - name: xpartla/pharmacy-ufe
     newName: xpartla/pharmacy-ufe       # {"$imagepolicy": "wac-hospital:pharmacy-ufe:name"}
-    newTag: main.20260101.0000          # {"$imagepolicy": "wac-hospital:pharmacy-ufe:tag"}
+    newTag: main.20260512.1527          # {"$imagepolicy": "wac-hospital:pharmacy-ufe:tag"}
   - name: xpartla/pharmacy-webapi
     newName: xpartla/pharmacy-webapi    # {"$imagepolicy": "wac-hospital:pharmacy-webapi:name"}
-    newTag: main.20260101.0000          # {"$imagepolicy": "wac-hospital:pharmacy-webapi:tag"}
+    newTag: main.20260512.1657          # {"$imagepolicy": "wac-hospital:pharmacy-webapi:tag"}
