@@ -9,3 +9,5 @@ spec:
     branch: main
   timeout: 1m0s
   url: https://github.com/xpartla/pharmacy-gitops
+  secretRef:
+    name: repository-pat
